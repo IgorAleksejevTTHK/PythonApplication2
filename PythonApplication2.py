@@ -58,13 +58,50 @@ print("▒▒▒▐██▄▒▒▒▒▒▒▒▒▄██▌▒▒▒")
 print("▒▒▒▒▀████████████▀▒▒▒▒")
 
 from math import *
-try:
-    R=float(input("R: "))
-    Sruudu=round((2*R)**2,2)
-    Sringi=round(pi*R**2,2)
-    Pruudu=round(8*R,2)
-    Pringi=round(2*pi*R,2)
-    print(f"Vastus:\nRuudu pindala on {Sruudu}, ruudu umbermoot on {Pruudu}, \nringi pindala on {Sringi}, ringi umbermoot on {Pringi}."
-          print()
-except:
-    print("sisesta ujukomaarvud")
+#try:
+  #  R=float(input("R: "))
+   # Sruudu=round((2*R)**2,2)
+  #  Sringi=round(pi*R**2,2)
+  #  Pruudu=round(8*R,2)
+  #  Pringi=round(2*pi*R,2)
+  #  print(f"Vastus:\nRuudu pindala on {Sruudu}, ruudu umbermoot on {Pruudu}, \nringi pindala on {Sringi}, ringi umbermoot on {Pringi}."
+   #       print()
+#except:
+ #   print("sisesta ujukomaarvud")
+
+d=2.575 #mundi d sm
+maaR=6378 #maa radius km
+maaR*=100000 #maa radius sm
+Pmaa=2*pi*maaR #maa umbermoot
+kogus=Pmaa/d
+print(f"Meil on vaja {int(kogus):,d} mündi")
+print(f"Meil on vaja {int(kogus*2):,d} euro")
+
+a="kill-koll ".capitalize()
+b="killadi-koll ".capitalize()
+print(a*2,b,a*2,b,a*4)
+
+# Laulusõnad
+laulusonad = """
+Rong see sõitis tsuhh tsuhh tsuhh,
+piilupart oli rongijuht.
+Rattad tegid rat tat taa,
+rat tat taa ja tat tat taa.
+Aga seal rongi peal,
+kas sa tead, kes olid seal?
+
+Rong see sõitis tuut tuut tuut,
+piilupart oli rongijuht.
+Rattad tegid kill koll koll,
+kill koll koll ja kill koll kill.
+"""
+
+# Muuda tekst suurteks tähtedeks
+suured_tahed = laulusonad.upper()
+
+# Väljasta tekst
+print(suured_tahed)
+
+#ulesanne 8
+
+
